@@ -14,7 +14,72 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      learning_progress: {
+        Row: {
+          completed_lessons: string[] | null
+          created_at: string
+          game_type: string
+          id: string
+          level: number | null
+          score: number | null
+          updated_at: string
+          user_id: string | null
+        }
+        Insert: {
+          completed_lessons?: string[] | null
+          created_at?: string
+          game_type: string
+          id?: string
+          level?: number | null
+          score?: number | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Update: {
+          completed_lessons?: string[] | null
+          created_at?: string
+          game_type?: string
+          id?: string
+          level?: number | null
+          score?: number | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string
+          email: string | null
+          first_name: string | null
+          id: string
+          last_name: string | null
+          phone: string | null
+          updated_at: string
+          user_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          first_name?: string | null
+          id?: string
+          last_name?: string | null
+          phone?: string | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          first_name?: string | null
+          id?: string
+          last_name?: string | null
+          phone?: string | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
