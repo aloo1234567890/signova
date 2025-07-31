@@ -6,6 +6,7 @@ import { Label } from '@/components/ui/label';
 import { Card } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import { Navigate } from 'react-router-dom';
+import signovaLogo from '@/assets/signova-logo-square.png';
 
 const Auth = () => {
   const [email, setEmail] = useState('');
@@ -45,18 +46,11 @@ const Auth = () => {
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <Card className="w-full max-w-md p-8 bg-card border border-border">
         <div className="text-center mb-8">
-          <div className="w-16 h-16 mx-auto mb-4 bg-red-500 flex items-center justify-center">
-            <img 
-              src="/signova-logo-square.png" 
-              alt="SIGNOVA" 
-              className="w-full h-full object-contain"
-              onError={(e) => {
-                console.log('Image failed to load:', e);
-                e.currentTarget.style.display = 'none';
-              }}
-              onLoad={() => console.log('Image loaded successfully')}
-            />
-          </div>
+          <img 
+            src={signovaLogo} 
+            alt="SIGNOVA" 
+            className="w-16 h-16 mx-auto mb-4"
+          />
           <h1 className="font-serif-display text-2xl font-normal text-foreground">
             Access Signova
           </h1>
