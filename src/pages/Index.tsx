@@ -65,7 +65,7 @@ const Index = () => {
             variant="gold" 
             size="lg"
             className="px-12 py-4 text-lg"
-            onClick={() => window.open('https://wa.me/1234567890?text=I%20am%20interested%20in%20joining%20Signova', '_blank')}
+            onClick={() => window.open('https://wa.me/919718730024?text=I%20am%20interested%20in%20joining%20Signova', '_blank')}
           >
             Send Enquiry
           </Button>
