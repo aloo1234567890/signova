@@ -1,10 +1,26 @@
 import { Button } from "@/components/ui/button"
 import { Section } from "@/components/ui/section"
 import { Card } from "@/components/ui/card"
+import { useAuth } from "@/hooks/useAuth"
+import { Link } from "react-router-dom"
 
 const Index = () => {
+  const { user, logout } = useAuth();
+
   return (
     <div className="min-h-screen bg-background text-foreground">
+      {/* Header */}
+      <header className="fixed top-0 right-0 p-6 z-50">
+        {user ? (
+          <Button variant="outline" onClick={logout} className="text-sm">
+            Sign Out
+          </Button>
+        ) : (
+          <Button variant="outline" asChild className="text-sm">
+            <Link to="/auth">Member Access</Link>
+          </Button>
+        )}
+      </header>
       {/* Hero Section */}
       <Section className="min-h-screen flex flex-col items-center justify-center text-center py-32">
         <div className="mb-8">
