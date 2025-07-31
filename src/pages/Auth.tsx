@@ -6,6 +6,7 @@ import { Label } from '@/components/ui/label';
 import { Card } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import { Navigate } from 'react-router-dom';
+import signovaLogo from '@/assets/signova-logo-square.png';
 
 const Auth = () => {
   const [email, setEmail] = useState('');
@@ -46,7 +47,7 @@ const Auth = () => {
       <Card className="w-full max-w-md p-8 bg-card border border-border">
         <div className="text-center mb-8">
           <img 
-            src="/signova-logo-square.png" 
+            src={signovaLogo} 
             alt="SIGNOVA" 
             className="w-16 h-16 mx-auto mb-4"
           />
