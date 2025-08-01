@@ -6,6 +6,7 @@ interface AuthContextType {
   user: User | null;
   session: Session | null;
   login: (email: string, password: string) => Promise<{ error: any }>;
+  signUp: (email: string, password: string) => Promise<{ error: any }>;
   logout: () => Promise<void>;
   loading: boolean;
 }
@@ -54,12 +55,29 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     return { error };
   };
 
+  const signUp = async (email: string, password: string) => {
+    if (!ALLOWED_EMAILS.includes(email)) {
+      return { error: { message: 'Email not authorized for access' } };
+    }
+
+    const redirectUrl = `${window.location.origin}/`;
+    
+    const { error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: {
+        emailRedirectTo: redirectUrl
+      }
+    });
+    return { error };
+  };
+
   const logout = async () => {
     await supabase.auth.signOut();
   };
 
   return (
-    <AuthContext.Provider value={{ user, session, login, logout, loading }}>
+    <AuthContext.Provider value={{ user, session, login, signUp, logout, loading }}>
       {children}
     </AuthContext.Provider>
   );
