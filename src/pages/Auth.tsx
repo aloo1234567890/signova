@@ -12,8 +12,7 @@ const Auth = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [isSignUp, setIsSignUp] = useState(false);
-  const { login, signUp, user } = useAuth();
+  const { login, user } = useAuth();
   const { toast } = useToast();
 
   // Redirect if already logged in
@@ -21,26 +20,22 @@ const Auth = () => {
     return <Navigate to="/" replace />;
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
 
-    const { error } = isSignUp 
-      ? await signUp(email, password)
-      : await login(email, password);
+    const { error } = await login(email, password);
 
     if (error) {
       toast({
         variant: "destructive",
-        title: isSignUp ? "Sign Up Failed" : "Login Failed",
+        title: "Login Failed",
         description: error.message,
       });
     } else {
       toast({
-        title: isSignUp ? "Account Created" : "Welcome",
-        description: isSignUp 
-          ? "Please check your email to verify your account" 
-          : "Successfully logged in",
+        title: "Welcome to Signova",
+        description: "Successfully logged in",
       });
     }
 
@@ -57,12 +52,12 @@ const Auth = () => {
             className="w-16 h-16 mx-auto mb-4"
           />
           <h1 className="font-serif-display text-2xl font-normal text-foreground">
-            {isSignUp ? 'Join Signova' : 'Access Signova'}
+            Access Signova
           </h1>
           <div className="w-12 h-0.5 bg-primary mx-auto mt-4"></div>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleLogin} className="space-y-6">
           <div>
             <Label htmlFor="email" className="font-sans-body">Email</Label>
             <Input
@@ -95,31 +90,12 @@ const Auth = () => {
             className="w-full"
             disabled={isLoading}
           >
-            {isLoading 
-              ? (isSignUp ? 'Creating Account...' : 'Signing in...') 
-              : (isSignUp ? 'Create Account' : 'Sign In')
-            }
+            {isLoading ? 'Signing in...' : 'Access Inner Circle'}
           </Button>
         </form>
 
-        <div className="text-center mt-6">
-          <button
-            type="button"
-            onClick={() => setIsSignUp(!isSignUp)}
-            className="text-sm text-primary hover:text-primary/80 transition-colors"
-          >
-            {isSignUp 
-              ? 'Already have an account? Sign in' 
-              : "Don't have an account? Create one"
-            }
-          </button>
-        </div>
-
         <p className="text-center text-sm text-muted-foreground mt-6">
-          {isSignUp 
-            ? 'Join the exclusive inner circle of Signova'
-            : 'Access restricted to authorized members only'
-          }
+          Membership by invitation only
         </p>
       </Card>
     </div>
