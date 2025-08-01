@@ -3,6 +3,8 @@ import { Section } from "@/components/ui/section"
 import { Card } from "@/components/ui/card"
 import { useAuth } from "@/hooks/useAuth"
 import { Link } from "react-router-dom"
+import signovaCurvedLogo from "@/assets/signova-logo-curved.png"
+import signovaSquareLogo from "@/assets/signova-logo-square.png"
 
 const Index = () => {
   const { user, logout } = useAuth();
@@ -25,7 +27,7 @@ const Index = () => {
       <Section className="min-h-screen flex flex-col items-center justify-center text-center py-32">
         <div className="mb-8">
           <img 
-            src="/signova-logo-curved.png" 
+            src={signovaCurvedLogo} 
             alt="SIGNOVA" 
             className="w-48 h-48 md:w-64 md:h-64 mx-auto mb-6 transition-elegant hover:scale-105"
           />
@@ -92,7 +94,7 @@ const Index = () => {
       <Section id="badge" className="text-center">
         <div className="max-w-2xl mx-auto">
           <img 
-            src="/signova-logo-square.png" 
+            src={signovaSquareLogo} 
             alt="SIGNOVA Badge" 
             className="w-32 h-32 md:w-48 md:h-48 mx-auto mb-8 transition-elegant hover:scale-105 gold-glow"
           />
