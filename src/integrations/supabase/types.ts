@@ -85,12 +85,8 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      create_new_user: {
-        Args: {
-          user_email: string
-          user_password: string
-          user_metadata?: Json
-        }
+      admin_create_user: {
+        Args: { user_email: string; user_password: string }
         Returns: string
       }
     }
