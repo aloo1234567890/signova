@@ -14,9 +14,17 @@ const Index = () => {
       {/* Header */}
       <header className="fixed top-0 right-0 p-6 z-50">
         {user ? (
-          <Button variant="outline" onClick={logout} className="text-sm">
-            Sign Out
-          </Button>
+          <div className="flex space-x-4">
+            <Button 
+              onClick={() => window.location.href = '/dashboard'} 
+              className="bg-purple-600 hover:bg-purple-700 text-white text-sm"
+            >
+              Dashboard
+            </Button>
+            <Button variant="outline" onClick={logout} className="text-sm">
+              Sign Out
+            </Button>
+          </div>
         ) : (
           <Button variant="outline" asChild className="text-sm">
             <Link to="/auth">Member Access</Link>

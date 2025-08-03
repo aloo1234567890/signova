@@ -8,34 +8,34 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* SIGNOVA Brand Colors */
-    --background: 0 0% 8%; /* Deep black */
-    --foreground: 43 23% 84%; /* Bone white */
+    /* SIGNOVA Dark Hacker Theme */
+    --background: 0 0% 3%; /* Deep black */
+    --foreground: 0 0% 90%; /* Clean white */
 
-    --card: 0 0% 12%;
-    --card-foreground: 43 23% 84%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 90%;
 
-    --popover: 0 0% 12%;
-    --popover-foreground: 43 23% 84%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 90%;
 
-    --primary: 43 63% 72%; /* Gold */
-    --primary-foreground: 0 0% 8%;
+    --primary: 263 70% 50%; /* Deep purple */
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 0 45% 25%; /* Deep maroon */
-    --secondary-foreground: 43 23% 84%;
+    --secondary: 240 5% 15%; /* Dark gray */
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 43 12% 65%;
+    --muted: 240 5% 12%;
+    --muted-foreground: 240 5% 60%;
 
-    --accent: 43 63% 72%; /* Gold accent */
-    --accent-foreground: 0 0% 8%;
+    --accent: 263 70% 50%; /* Purple accent */
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 43 23% 84%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 43 63% 72%;
+    --border: 240 5% 18%;
+    --input: 240 5% 12%;
+    --ring: 263 70% 50%;
 
     --radius: 0.25rem;
 
@@ -58,33 +58,33 @@ All colors MUST be HSL.
 
   .dark {
     /* Same as light mode for SIGNOVA's dark theme */
-    --background: 0 0% 8%;
-    --foreground: 43 23% 84%;
+    --background: 0 0% 3%;
+    --foreground: 0 0% 90%;
 
-    --card: 0 0% 12%;
-    --card-foreground: 43 23% 84%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 90%;
 
-    --popover: 0 0% 12%;
-    --popover-foreground: 43 23% 84%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 90%;
 
-    --primary: 43 63% 72%;
-    --primary-foreground: 0 0% 8%;
+    --primary: 263 70% 50%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 0 45% 25%;
-    --secondary-foreground: 43 23% 84%;
+    --secondary: 240 5% 15%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 43 12% 65%;
+    --muted: 240 5% 12%;
+    --muted-foreground: 240 5% 60%;
 
-    --accent: 43 63% 72%;
-    --accent-foreground: 0 0% 8%;
+    --accent: 263 70% 50%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 43 23% 84%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 43 63% 72%;
+    --border: 240 5% 18%;
+    --input: 240 5% 12%;
+    --ring: 263 70% 50%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
