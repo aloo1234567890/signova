@@ -2,97 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* SIGNOVA Vintage Academic Design System - Harvard Inspired */
 
 @layer base {
   :root {
-    /* SIGNOVA Dark Hacker Theme */
-    --background: 0 0% 3%; /* Deep black */
-    --foreground: 0 0% 90%; /* Clean white */
+    /* Vintage Harvard Academic Theme */
+    --background: 30 25% 96%; /* Warm parchment white */
+    --foreground: 30 20% 15%; /* Rich dark brown */
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 90%;
+    --card: 30 20% 98%; /* Slightly warmer white */
+    --card-foreground: 30 20% 15%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 90%;
+    --popover: 30 20% 98%;
+    --popover-foreground: 30 20% 15%;
 
-    --primary: 263 70% 50%; /* Deep purple */
-    --primary-foreground: 0 0% 98%;
+    --primary: 25 45% 25%; /* Deep academic brown */
+    --primary-foreground: 30 25% 96%;
 
-    --secondary: 240 5% 15%; /* Dark gray */
-    --secondary-foreground: 0 0% 90%;
+    --secondary: 30 15% 85%; /* Warm beige */
+    --secondary-foreground: 30 20% 15%;
 
-    --muted: 240 5% 12%;
-    --muted-foreground: 240 5% 60%;
+    --muted: 30 12% 88%;
+    --muted-foreground: 30 15% 45%;
 
-    --accent: 263 70% 50%; /* Purple accent */
-    --accent-foreground: 0 0% 98%;
+    --accent: 35 60% 45%; /* Rich gold accent */
+    --accent-foreground: 30 25% 96%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 30 25% 96%;
 
-    --border: 240 5% 18%;
-    --input: 240 5% 12%;
-    --ring: 263 70% 50%;
+    --border: 30 15% 80%;
+    --input: 30 20% 92%;
+    --ring: 35 60% 45%;
 
-    --radius: 0.25rem;
+    --radius: 0.375rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Custom Academic Colors */
+    --harvard-crimson: 0 75% 45%;
+    --vintage-gold: 45 85% 60%;
+    --parchment: 30 25% 96%;
+    --leather-brown: 25 40% 30%;
+    --ink-brown: 30 25% 20%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Gradients */
+    --gradient-academic: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-parchment: linear-gradient(180deg, hsl(var(--background)), hsl(30 20% 94%));
+    --gradient-leather: linear-gradient(135deg, hsl(var(--leather-brown)), hsl(25 35% 35%));
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Shadows */
+    --shadow-vintage: 0 4px 20px hsl(var(--primary) / 0.15);
+    --shadow-paper: 0 2px 8px hsl(30 15% 70% / 0.3);
+    --shadow-glow: 0 0 25px hsl(var(--accent) / 0.4);
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    /* Typography Scale */
+    --font-size-display: clamp(2.5rem, 8vw, 6rem);
+    --font-size-headline: clamp(1.75rem, 4vw, 3rem);
+    --font-size-title: clamp(1.25rem, 3vw, 2rem);
 
-    --sidebar-accent: 240 4.8% 95.9%;
+    /* Animation Durations */
+    --duration-fast: 0.2s;
+    --duration-normal: 0.3s;
+    --duration-slow: 0.6s;
+    --duration-slower: 1s;
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    /* Same as light mode for SIGNOVA's dark theme */
-    --background: 0 0% 3%;
-    --foreground: 0 0% 90%;
+    /* Vintage Academic Theme - consistent for single theme approach */
+    --background: 30 25% 96%;
+    --foreground: 30 20% 15%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 90%;
+    --card: 30 20% 98%;
+    --card-foreground: 30 20% 15%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 90%;
+    --popover: 30 20% 98%;
+    --popover-foreground: 30 20% 15%;
 
-    --primary: 263 70% 50%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 25 45% 25%;
+    --primary-foreground: 30 25% 96%;
 
-    --secondary: 240 5% 15%;
-    --secondary-foreground: 0 0% 90%;
+    --secondary: 30 15% 85%;
+    --secondary-foreground: 30 20% 15%;
 
-    --muted: 240 5% 12%;
-    --muted-foreground: 240 5% 60%;
+    --muted: 30 12% 88%;
+    --muted-foreground: 30 15% 45%;
 
-    --accent: 263 70% 50%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 35 60% 45%;
+    --accent-foreground: 30 25% 96%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 30 25% 96%;
 
-    --border: 240 5% 18%;
-    --input: 240 5% 12%;
-    --ring: 263 70% 50%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 30 15% 80%;
+    --input: 30 20% 92%;
+    --ring: 35 60% 45%;
+
+    --sidebar-background: 30 20% 98%;
+    --sidebar-foreground: 30 20% 15%;
+    --sidebar-primary: 25 45% 25%;
+    --sidebar-primary-foreground: 30 25% 96%;
+    --sidebar-accent: 30 15% 85%;
+    --sidebar-accent-foreground: 30 20% 15%;
+    --sidebar-border: 30 15% 80%;
+    --sidebar-ring: 35 60% 45%;
   }
 }
 
@@ -105,25 +117,147 @@ All colors MUST be HSL.
     @apply bg-background text-foreground font-serif;
   }
 
-  /* Custom fonts for SIGNOVA */
+  /* Academic Typography */
   .font-serif-display {
-    font-family: 'Georgia', 'Times New Roman', serif;
+    font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
     font-weight: 400;
     letter-spacing: 0.02em;
+    line-height: 1.2;
   }
 
   .font-sans-body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 400;
+    line-height: 1.6;
   }
 
-  /* Gold glow effect */
-  .gold-glow {
-    box-shadow: 0 0 30px hsl(var(--primary) / 0.3);
+  /* Academic Effects */
+  .vintage-glow {
+    box-shadow: var(--shadow-glow);
   }
 
-  /* Smooth transitions */
+  .paper-shadow {
+    box-shadow: var(--shadow-paper);
+  }
+
+  .academic-shadow {
+    box-shadow: var(--shadow-vintage);
+  }
+
+  /* Smooth Academic Transitions */
   .transition-elegant {
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all var(--duration-normal) cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .transition-slow {
+    transition: all var(--duration-slow) cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Text Animations */
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes glow {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .animate-typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 2s steps(40, end);
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp var(--duration-slow) ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft var(--duration-slow) ease-out forwards;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Interactive Effects */
+  .hover-lift {
+    transition: transform var(--duration-normal) ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-5px);
+  }
+
+  .hover-glow {
+    transition: box-shadow var(--duration-normal) ease;
+  }
+
+  .hover-glow:hover {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .academic-underline {
+    position: relative;
+  }
+
+  .academic-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, hsl(var(--accent)), hsl(var(--primary)));
+    transition: width var(--duration-normal) ease;
+  }
+
+  .academic-underline:hover::after {
+    width: 100%;
+  }
+
+  /* Scroll Animations */
+  .scroll-fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all var(--duration-slow) ease;
+  }
+
+  .scroll-fade.in-view {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
