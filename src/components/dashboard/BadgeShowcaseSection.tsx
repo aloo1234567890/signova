@@ -53,9 +53,9 @@ export const BadgeShowcaseSection = () => {
     <Card className="bg-card/50 border-border">
       <CardHeader>
         <CardTitle className="flex items-center space-x-2">
-          <Award className="h-5 w-5 text-purple-400" />
+          <Award className="h-5 w-5 text-accent" />
           <span>Badge Showcase</span>
-          <Badge variant="secondary" className="bg-yellow-500/20 text-yellow-300">
+          <Badge variant="secondary" className="bg-accent/20 text-accent">
             {userBadges.length}
           </Badge>
         </CardTitle>

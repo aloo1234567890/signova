@@ -67,9 +67,9 @@ export const PendingInquiriesSection = ({ userRole }: PendingInquiriesSectionPro
     <Card className="bg-card/50 border-border">
       <CardHeader>
         <CardTitle className="flex items-center space-x-2">
-          <UserPlus className="h-5 w-5 text-purple-400" />
+          <UserPlus className="h-5 w-5 text-accent" />
           <span>Pending Inquiries</span>
-          <Badge variant="secondary" className="bg-orange-500/20 text-orange-300">
+          <Badge variant="secondary" className="bg-accent/20 text-accent">
             {inquiries.length}
           </Badge>
         </CardTitle>
@@ -110,7 +110,7 @@ export const PendingInquiriesSection = ({ userRole }: PendingInquiriesSectionPro
                     <Button
                       size="sm"
                       onClick={() => handleApprove(inquiry.id)}
-                      className="bg-green-600 hover:bg-green-700 text-white"
+                      className="bg-accent hover:bg-accent/90 text-accent-foreground"
                     >
                       <Check className="h-3 w-3 mr-1" />
                       Approve

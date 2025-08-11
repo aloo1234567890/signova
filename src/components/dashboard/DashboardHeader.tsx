@@ -18,12 +18,12 @@ const getRoleIcon = (role: string | null) => {
 
 const getRoleColor = (role: string | null) => {
   switch (role) {
-    case 'founder': return 'bg-gradient-to-r from-purple-600 to-purple-800';
-    case 'co_founder': return 'bg-gradient-to-r from-purple-500 to-purple-700';
-    case 'senior_member': return 'bg-gradient-to-r from-gray-600 to-gray-800';
-    case 'member': return 'bg-gradient-to-r from-gray-500 to-gray-700';
-    case 'muted': return 'bg-gradient-to-r from-gray-400 to-gray-600';
-    default: return 'bg-gradient-to-r from-gray-500 to-gray-700';
+    case 'founder': return 'bg-gradient-to-r from-accent to-primary';
+    case 'co_founder': return 'bg-gradient-to-r from-accent/90 to-primary';
+    case 'senior_member': return 'bg-primary';
+    case 'member': return 'bg-secondary';
+    case 'muted': return 'bg-muted';
+    default: return 'bg-secondary';
   }
 };
 
@@ -49,7 +49,7 @@ export const DashboardHeader = () => {
         <div className="flex items-center space-x-4">
           <div className="flex flex-col items-end">
             <span className="text-sm text-foreground">{user?.email}</span>
-            <Badge className={`${getRoleColor(role)} text-white border-0`}>
+            <Badge className={`${getRoleColor(role)} text-primary-foreground border-0`}>
               {getRoleIcon(role)}
               <span className="ml-1 capitalize">{role?.replace('_', ' ')}</span>
             </Badge>

@@ -26,7 +26,7 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-gradient-to-br from-background to-secondary/10 text-foreground">
       <DashboardHeader />
       
       <div className="container mx-auto px-4 py-8 space-y-8">

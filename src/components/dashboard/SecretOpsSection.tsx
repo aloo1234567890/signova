@@ -74,9 +74,9 @@ export const SecretOpsSection = ({ userRole }: SecretOpsSectionProps) => {
       <CardHeader>
         <div className="flex items-center justify-between">
           <CardTitle className="flex items-center space-x-2">
-            <Eye className="h-5 w-5 text-purple-400" />
+            <Eye className="h-5 w-5 text-accent" />
             <span>Secret Ops</span>
-            <Badge variant="secondary" className="bg-red-500/20 text-red-300">
+            <Badge variant="secondary" className="bg-destructive/10 text-destructive">
               CLASSIFIED
             </Badge>
           </CardTitle>
@@ -84,7 +84,7 @@ export const SecretOpsSection = ({ userRole }: SecretOpsSectionProps) => {
             <Button
               size="sm"
               onClick={() => setShowAddForm(!showAddForm)}
-              className="bg-purple-600 hover:bg-purple-700"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
               <Plus className="h-3 w-3 mr-1" />
               Log Op

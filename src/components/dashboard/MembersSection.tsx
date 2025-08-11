@@ -30,12 +30,12 @@ const getRoleIcon = (role: string) => {
 
 const getRoleColor = (role: string) => {
   switch (role) {
-    case 'founder': return 'bg-purple-600';
-    case 'co_founder': return 'bg-purple-500';
-    case 'senior_member': return 'bg-gray-600';
-    case 'member': return 'bg-gray-500';
-    case 'muted': return 'bg-gray-400';
-    default: return 'bg-gray-500';
+    case 'founder': return 'bg-accent';
+    case 'co_founder': return 'bg-accent/90';
+    case 'senior_member': return 'bg-primary';
+    case 'member': return 'bg-secondary';
+    case 'muted': return 'bg-muted';
+    default: return 'bg-secondary';
   }
 };
 
@@ -45,6 +45,17 @@ export const MembersSection = ({ userRole }: MembersSectionProps) => {
 
   useEffect(() => {
     const fetchMembers = async () => {
+      const mockMembers: Member[] = [
+        {
+          id: '1', email: 'ayank@signova', first_name: 'Ayank', last_name: null,
+          role: 'founder', created_at: new Date().toISOString()
+        },
+        {
+          id: '2', email: 'bhavyansh@signova', first_name: 'Bhavyansh', last_name: null,
+          role: 'member', created_at: new Date().toISOString()
+        }
+      ];
+
       try {
         const { data, error } = await supabase
           .from('profiles')
@@ -60,21 +71,23 @@ export const MembersSection = ({ userRole }: MembersSectionProps) => {
 
         if (error) {
           console.error('Error fetching members:', error);
+          setMembers(mockMembers);
           return;
         }
 
-        const formattedMembers = data?.map(member => ({
+        const formattedMembers = (data || []).map((member: any) => ({
           id: member.id,
           email: member.email || '',
           first_name: member.first_name,
           last_name: member.last_name,
           role: (member.user_roles as any)?.[0]?.role || 'member',
           created_at: member.created_at
-        })) || [];
+        }));
 
-        setMembers(formattedMembers);
+        setMembers(formattedMembers.length ? formattedMembers : mockMembers);
       } catch (error) {
         console.error('Error fetching members:', error);
+        setMembers(mockMembers);
       } finally {
         setLoading(false);
       }
@@ -87,9 +100,9 @@ export const MembersSection = ({ userRole }: MembersSectionProps) => {
     <Card className="bg-card/50 border-border">
       <CardHeader>
         <CardTitle className="flex items-center space-x-2">
-          <Users className="h-5 w-5 text-purple-400" />
+          <Users className="h-5 w-5 text-accent" />
           <span>Active Members</span>
-          <Badge variant="secondary" className="bg-purple-500/20 text-purple-300">
+          <Badge variant="secondary" className="bg-accent/20 text-accent">
             {members.length}
           </Badge>
         </CardTitle>
@@ -119,7 +132,7 @@ export const MembersSection = ({ userRole }: MembersSectionProps) => {
                     Joined {new Date(member.created_at).toLocaleDateString()}
                   </span>
                 </div>
-                <Badge className={`${getRoleColor(member.role)} text-white border-0`}>
+                <Badge className={`${getRoleColor(member.role)} text-primary-foreground border-0`}>
                   {getRoleIcon(member.role)}
                   <span className="ml-1 capitalize">{member.role.replace('_', ' ')}</span>
                 </Badge>

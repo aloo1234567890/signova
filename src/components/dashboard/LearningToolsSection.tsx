@@ -9,28 +9,28 @@ export const LearningToolsSection = () => {
       description: "Learn basic sign language",
       icon: Video,
       action: "Watch Now",
-      color: "bg-blue-600"
+      color: "bg-accent"
     },
     {
       title: "Flashcards",
       description: "Practice vocabulary",
       icon: BookOpen,
       action: "Study",
-      color: "bg-green-600"
+      color: "bg-primary"
     },
     {
       title: "Sign Games",
       description: "Interactive challenges",
       icon: Gamepad2,
       action: "Play",
-      color: "bg-purple-600"
+      color: "bg-accent"
     },
     {
       title: "Progress Quiz",
       description: "Test your knowledge",
       icon: PlayCircle,
       action: "Start Quiz",
-      color: "bg-orange-600"
+      color: "bg-primary"
     }
   ];
 
@@ -38,7 +38,7 @@ export const LearningToolsSection = () => {
     <Card className="bg-card/50 border-border">
       <CardHeader>
         <CardTitle className="flex items-center space-x-2">
-          <BookOpen className="h-5 w-5 text-purple-400" />
+          <BookOpen className="h-5 w-5 text-accent" />
           <span>Learning Tools</span>
         </CardTitle>
       </CardHeader>
@@ -69,10 +69,10 @@ export const LearningToolsSection = () => {
           })}
         </div>
         
-        <div className="mt-6 p-4 rounded-lg bg-purple-500/10 border border-purple-500/20">
+        <div className="mt-6 p-4 rounded-lg bg-accent/10 border border-accent/20">
           <div className="flex items-center space-x-2 mb-2">
-            <PlayCircle className="h-4 w-4 text-purple-400" />
-            <span className="text-sm font-medium text-purple-300">Next Module</span>
+            <PlayCircle className="h-4 w-4 text-accent" />
+            <span className="text-sm font-medium text-accent">Next Module</span>
           </div>
           <p className="text-sm text-foreground">Basic Greetings in ASL</p>
           <p className="text-xs text-muted-foreground">Complete previous modules to unlock</p>
