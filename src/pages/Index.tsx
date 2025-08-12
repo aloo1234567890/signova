@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Section } from "@/components/ui/section"
 import { Card } from "@/components/ui/card"
@@ -8,6 +9,12 @@ import signovaSquareLogo from "@/assets/signova-logo-square.png"
 
 const Index = () => {
   const { user, logout } = useAuth();
+  const [showBhai, setShowBhai] = useState(false);
+
+  useEffect(() => {
+    const t = setTimeout(() => setShowBhai(true), 2200);
+    return () => clearTimeout(t);
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background to-parchment text-foreground">
@@ -15,11 +22,10 @@ const Index = () => {
       <header className="fixed top-0 right-0 p-6 z-50 animate-fade-in">
         {user ? (
           <div className="flex space-x-4">
-            <Button 
-              onClick={() => window.location.href = '/dashboard'} 
+            <Button asChild
               className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm academic-shadow hover-lift transition-elegant"
             >
-              Dashboard
+              <Link to="/dashboard" aria-label="Open Dashboard">Dashboard</Link>
             </Button>
             <Button 
               variant="outline" 
@@ -56,10 +62,15 @@ const Index = () => {
         
         <div className="space-y-8 animate-fade-in">
           <h1 className="font-serif-display text-5xl md:text-7xl lg:text-8xl font-semibold text-foreground mb-6 tracking-wide leading-tight">
-            <span className="block animate-typewriter overflow-hidden whitespace-nowrap">Power in Silence</span>
+            <span className="inline-block overflow-hidden whitespace-nowrap">
+              <span className="animate-typewriter">Power in Silence</span>
+              {showBhai && (
+                <span className="animate-typewriter" style={{ animationDelay: '0.2s' }}> — Bhai the way</span>
+              )}
+            </span>
           </h1>
           
-          <div className="w-32 h-0.5 bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-8"></div>
+          <div className="w-32 h-0.5 bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-8 animate-fade-in-up"></div>
           
           <p className="font-serif text-2xl md:text-3xl text-foreground/80 mb-6 max-w-3xl leading-relaxed italic">
             "We move without sound. We speak without words."
