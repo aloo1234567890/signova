@@ -191,10 +191,11 @@
     50% { transform: translateY(-10px); }
   }
 
-  .animate-typewriter {
+.animate-typewriter {
+    display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    animation: typewriter 2s steps(40, end);
+    animation: typewriter 2s steps(40, end) forwards;
   }
 
   .animate-fade-in-up {
