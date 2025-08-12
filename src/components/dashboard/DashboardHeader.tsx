@@ -36,7 +36,7 @@ export const DashboardHeader = () => {
   };
 
   return (
-    <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
+    <header className="animate-fade-in border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-4">
           <img src={signovaLogo} alt="Signova" className="h-8 w-auto" />
