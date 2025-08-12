@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PlayCircle, BookOpen, Gamepad2, Video } from "lucide-react";
-
+import { Link } from "react-router-dom";
 export const LearningToolsSection = () => {
   const tools = [
     {
@@ -9,28 +9,32 @@ export const LearningToolsSection = () => {
       description: "Learn basic sign language",
       icon: Video,
       action: "Watch Now",
-      color: "bg-accent"
+      color: "bg-accent",
+      href: "/tools/videos",
     },
     {
       title: "Flashcards",
       description: "Practice vocabulary",
       icon: BookOpen,
       action: "Study",
-      color: "bg-primary"
+      color: "bg-primary",
+      href: "/tools/flashcards",
     },
     {
       title: "Sign Games",
       description: "Interactive challenges",
       icon: Gamepad2,
       action: "Play",
-      color: "bg-accent"
+      color: "bg-accent",
+      href: "/tools/games",
     },
     {
       title: "Progress Quiz",
       description: "Test your knowledge",
       icon: PlayCircle,
       action: "Start Quiz",
-      color: "bg-primary"
+      color: "bg-primary",
+      href: "/tools/quiz",
     }
   ];
 
@@ -57,11 +61,12 @@ export const LearningToolsSection = () => {
                     <p className="text-xs text-muted-foreground">{tool.description}</p>
                   </div>
                   <Button 
+                    asChild
                     size="sm" 
                     variant="outline" 
                     className="w-full opacity-70 group-hover:opacity-100 transition-opacity"
                   >
-                    {tool.action}
+                    <Link to={tool.href} aria-label={`${tool.title} — ${tool.action}`}>{tool.action}</Link>
                   </Button>
                 </div>
               </div>

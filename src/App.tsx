@@ -8,6 +8,10 @@ import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
+import ASLVideos from "./pages/tools/ASLVideos";
+import Flashcards from "./pages/tools/Flashcards";
+import SignGames from "./pages/tools/SignGames";
+import ProgressQuiz from "./pages/tools/ProgressQuiz";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +26,11 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            {/* Learning tools */}
+            <Route path="/tools/videos" element={<ASLVideos />} />
+            <Route path="/tools/flashcards" element={<Flashcards />} />
+            <Route path="/tools/games" element={<SignGames />} />
+            <Route path="/tools/quiz" element={<ProgressQuiz />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
