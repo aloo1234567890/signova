@@ -2,6 +2,7 @@ import { useAuth } from "@/hooks/useAuth";
 import { useUserRole } from "@/hooks/useUserRole";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import { LogOut, Shield, Crown, Star, Users, VolumeX } from "lucide-react";
 import signovaLogo from "@/assets/signova-logo-curved.png";
 
@@ -38,12 +39,29 @@ export const DashboardHeader = () => {
   return (
     <header className="animate-fade-in border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center space-x-4">
-          <img src={signovaLogo} alt="Signova" className="h-8 w-auto" />
-          <div className="flex flex-col">
-            <span className="text-lg font-bold text-foreground">SIGNOVA HQ</span>
-            <span className="text-xs text-muted-foreground">Digital Operations Center</span>
+        <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-4">
+            <img src={signovaLogo} alt="Signova" className="h-8 w-auto" />
+            <div className="flex flex-col">
+              <span className="text-lg font-bold text-foreground">SIGNOVA HQ</span>
+              <span className="text-xs text-muted-foreground">Digital Operations Center</span>
+            </div>
           </div>
+          
+          <nav className="hidden md:flex space-x-4">
+            <Link 
+              to="/dashboard" 
+              className="font-sans-body text-sm text-muted-foreground hover:text-foreground academic-underline transition-colors"
+            >
+              Dashboard
+            </Link>
+            <Link 
+              to="/leadership" 
+              className="font-sans-body text-sm text-muted-foreground hover:text-foreground academic-underline transition-colors"
+            >
+              Leadership
+            </Link>
+          </nav>
         </div>
 
         <div className="flex items-center space-x-4">

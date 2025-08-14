@@ -7,6 +7,7 @@ import { AuthProvider } from "@/hooks/useAuth";
 import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
+import Leadership from "./pages/Leadership";
 import NotFound from "./pages/NotFound";
 import ASLVideos from "./pages/tools/ASLVideos";
 import Flashcards from "./pages/tools/Flashcards";
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/leadership" element={<Leadership />} />
             {/* Learning tools */}
             <Route path="/tools/videos" element={<ASLVideos />} />
             <Route path="/tools/flashcards" element={<Flashcards />} />
