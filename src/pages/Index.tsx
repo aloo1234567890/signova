@@ -9,11 +9,10 @@ import signovaSquareLogo from "@/assets/signova-logo-square.png"
 
 const Index = () => {
   const { user, logout } = useAuth();
-  const [showBhai, setShowBhai] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const t = setTimeout(() => setShowBhai(true), 2200);
-    return () => clearTimeout(t);
+    setIsVisible(true);
   }, []);
 
   return (
@@ -62,11 +61,10 @@ const Index = () => {
         
         <div className="space-y-8 animate-fade-in">
           <h1 className="font-serif-display text-5xl md:text-7xl lg:text-8xl font-semibold text-foreground mb-6 tracking-wide leading-tight">
-            <span className="inline-block overflow-hidden whitespace-nowrap">
-              <span className="animate-typewriter">Power in Silence</span>
-              {showBhai && (
-                <span className="animate-typewriter" style={{ animationDelay: '0.2s' }}> — Bhai the way</span>
-              )}
+            <span className="inline-block">
+              <span className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                Power in Silence
+              </span>
             </span>
           </h1>
           
@@ -205,6 +203,215 @@ const Index = () => {
             <p className="font-sans-body text-muted-foreground max-w-lg mx-auto leading-relaxed">
               Each badge represents countless hours of study, practice, and commitment to the art of silent communication. It is a symbol of mastery that cannot be purchased—only earned.
             </p>
+          </div>
+        </div>
+      </Section>
+
+      {/* Features & Benefits Section */}
+      <Section id="features" className="py-24 bg-gradient-to-b from-primary/5 to-accent/5">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="font-serif-display text-4xl md:text-5xl font-semibold text-foreground mb-8 tracking-wide">
+              Mastery Through Structure
+            </h2>
+            <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent to-transparent mx-auto"></div>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="group relative overflow-hidden rounded-lg bg-card p-8 academic-shadow hover-lift transition-elegant">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-8 h-8 bg-accent rounded-full"></div>
+                </div>
+                <h3 className="font-serif-display text-xl font-medium text-foreground mb-4">Precision Training</h3>
+                <p className="font-sans-body text-muted-foreground leading-relaxed">
+                  Our curriculum emphasizes accuracy over speed, ensuring every gesture carries meaning and purpose.
+                </p>
+              </div>
+            </div>
+            
+            <div className="group relative overflow-hidden rounded-lg bg-card p-8 academic-shadow hover-lift transition-elegant">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-8 h-8 bg-primary rounded-full"></div>
+                </div>
+                <h3 className="font-serif-display text-xl font-medium text-foreground mb-4">Academic Excellence</h3>
+                <p className="font-sans-body text-muted-foreground leading-relaxed">
+                  Rigorous standards maintained through comprehensive assessment and continuous improvement.
+                </p>
+              </div>
+            </div>
+            
+            <div className="group relative overflow-hidden rounded-lg bg-card p-8 academic-shadow hover-lift transition-elegant">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-8 h-8 bg-accent rounded-full"></div>
+                </div>
+                <h3 className="font-serif-display text-xl font-medium text-foreground mb-4">Elite Network</h3>
+                <p className="font-sans-body text-muted-foreground leading-relaxed">
+                  Connect with like-minded individuals committed to mastering the art of silent communication.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Stats Section */}
+      <Section id="stats" className="py-24 bg-gradient-to-r from-secondary/20 to-accent/20">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="font-serif-display text-3xl md:text-4xl font-semibold text-foreground mb-16 tracking-wide">
+            Excellence in Numbers
+          </h2>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="group">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative bg-card/80 backdrop-blur-sm border border-accent/20 rounded-lg p-6 hover-lift transition-elegant">
+                  <div className="font-serif-display text-3xl md:text-4xl font-bold text-accent mb-2">95%</div>
+                  <div className="font-sans-body text-sm text-muted-foreground uppercase tracking-wide">Accuracy Rate</div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="group">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative bg-card/80 backdrop-blur-sm border border-primary/20 rounded-lg p-6 hover-lift transition-elegant">
+                  <div className="font-serif-display text-3xl md:text-4xl font-bold text-primary mb-2">150+</div>
+                  <div className="font-sans-body text-sm text-muted-foreground uppercase tracking-wide">Signs Mastered</div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="group">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative bg-card/80 backdrop-blur-sm border border-accent/20 rounded-lg p-6 hover-lift transition-elegant">
+                  <div className="font-serif-display text-3xl md:text-4xl font-bold text-accent mb-2">24/7</div>
+                  <div className="font-sans-body text-sm text-muted-foreground uppercase tracking-wide">Practice Access</div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="group">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative bg-card/80 backdrop-blur-sm border border-primary/20 rounded-lg p-6 hover-lift transition-elegant">
+                  <div className="font-serif-display text-3xl md:text-4xl font-bold text-primary mb-2">100%</div>
+                  <div className="font-sans-body text-sm text-muted-foreground uppercase tracking-wide">Commitment</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Learning Path Section */}
+      <Section id="path" className="py-24 bg-gradient-to-b from-background to-secondary/10">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="font-serif-display text-4xl md:text-5xl font-semibold text-foreground mb-8 tracking-wide">
+              The Path to Mastery
+            </h2>
+            <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-8"></div>
+            <p className="font-serif text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              A structured journey from foundation to excellence, designed for those who seek precision in every gesture.
+            </p>
+          </div>
+          
+          <div className="relative">
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-accent via-primary to-accent opacity-30"></div>
+            
+            <div className="space-y-16">
+              <div className="relative flex items-center justify-between">
+                <div className="w-5/12 text-right pr-8">
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-4">Foundation</h3>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    Master the alphabet, basic vocabulary, and essential grammar structures of ASL.
+                  </p>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-accent rounded-full border-4 border-background flex items-center justify-center">
+                  <div className="w-4 h-4 bg-background rounded-full"></div>
+                </div>
+                <div className="w-5/12"></div>
+              </div>
+              
+              <div className="relative flex items-center justify-between">
+                <div className="w-5/12"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-primary rounded-full border-4 border-background flex items-center justify-center">
+                  <div className="w-4 h-4 bg-background rounded-full"></div>
+                </div>
+                <div className="w-5/12 pl-8">
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-4">Application</h3>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    Apply knowledge through conversation practice, storytelling, and real-world scenarios.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="relative flex items-center justify-between">
+                <div className="w-5/12 text-right pr-8">
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-4">Mastery</h3>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    Achieve fluency through advanced techniques, cultural understanding, and teaching others.
+                  </p>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-accent rounded-full border-4 border-background flex items-center justify-center">
+                  <div className="w-4 h-4 bg-background rounded-full"></div>
+                </div>
+                <div className="w-5/12"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Testimonials Section */}
+      <Section id="testimonials" className="py-24 bg-gradient-to-r from-accent/5 to-primary/5">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="font-serif-display text-4xl md:text-5xl font-semibold text-foreground mb-16 tracking-wide">
+            Voices of Excellence
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="group">
+              <div className="relative overflow-hidden rounded-lg bg-card/80 backdrop-blur-sm border border-accent/20 p-8 academic-shadow hover-lift transition-elegant">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10">
+                  <div className="text-4xl text-accent mb-4">"</div>
+                  <p className="font-serif text-lg text-foreground mb-6 leading-relaxed italic">
+                    The precision and discipline taught here transformed not just my communication skills, but my entire approach to learning.
+                  </p>
+                  <div className="flex items-center justify-center space-x-3">
+                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+                    <span className="font-sans-body text-sm text-muted-foreground uppercase tracking-wider">Student Excellence</span>
+                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="group">
+              <div className="relative overflow-hidden rounded-lg bg-card/80 backdrop-blur-sm border border-primary/20 p-8 academic-shadow hover-lift transition-elegant">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10">
+                  <div className="text-4xl text-primary mb-4">"</div>
+                  <p className="font-serif text-lg text-foreground mb-6 leading-relaxed italic">
+                    Signova doesn't just teach sign language—it cultivates a mindset of excellence that extends to every aspect of life.
+                  </p>
+                  <div className="flex items-center justify-center space-x-3">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span className="font-sans-body text-sm text-muted-foreground uppercase tracking-wider">Academic Achievement</span>
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Section>
