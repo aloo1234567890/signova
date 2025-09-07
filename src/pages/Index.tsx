@@ -114,13 +114,13 @@ const Index = () => {
       {/* Excellence in Silent Communication - Feature Cards */}
       <Section className="py-24 bg-gradient-to-b from-transparent to-secondary/10">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="font-serif-display text-4xl md:text-5xl font-semibold text-foreground mb-16 tracking-wide animate-shimmer">
+          <h2 className="font-serif-display text-4xl md:text-5xl font-semibold text-foreground mb-16 tracking-wide">
             Excellence in Silent Communication
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-lg bg-card p-8 academic-shadow hover-lift transition-elegant">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <div className="w-8 h-8 bg-primary rounded-sm"></div>
@@ -133,7 +133,7 @@ const Index = () => {
             </div>
             
             <div className="group relative overflow-hidden rounded-lg bg-card p-8 academic-shadow hover-lift transition-elegant">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-accent/20 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <div className="w-8 h-8 bg-accent rounded-sm"></div>
@@ -146,7 +146,7 @@ const Index = () => {
             </div>
             
             <div className="group relative overflow-hidden rounded-lg bg-card p-8 academic-shadow hover-lift transition-elegant">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <div className="w-8 h-8 bg-primary rounded-sm"></div>
@@ -164,7 +164,7 @@ const Index = () => {
       {/* About Us - Academic Style */}
       <Section id="about" className="text-center py-24 bg-gradient-to-b from-transparent to-secondary/20">
         <div className="max-w-6xl mx-auto scroll-fade">
-          <h2 className="font-serif-display text-4xl md:text-6xl font-semibold text-foreground mb-8 tracking-wide animate-shimmer">
+          <h2 className="font-serif-display text-4xl md:text-6xl font-semibold text-foreground mb-8 tracking-wide">
             About Us
           </h2>
           
@@ -216,7 +216,7 @@ const Index = () => {
       <Section id="journey" className="py-24 bg-gradient-to-b from-secondary/20 to-accent/10">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="font-serif-display text-4xl md:text-6xl font-semibold text-foreground mb-8 tracking-wide animate-shimmer">
+            <h2 className="font-serif-display text-4xl md:text-6xl font-semibold text-foreground mb-8 tracking-wide">
               Our Journey
             </h2>
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-8"></div>
@@ -585,7 +585,7 @@ const Index = () => {
       {/* Contact Section */}
       <Section id="contact" className="py-24 bg-gradient-to-b from-primary/5 to-accent/10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-serif-display text-4xl md:text-5xl font-semibold text-foreground mb-8 tracking-wide animate-shimmer">
+          <h2 className="font-serif-display text-4xl md:text-5xl font-semibold text-foreground mb-8 tracking-wide">
             Contact Us
           </h2>
           <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-16"></div>
