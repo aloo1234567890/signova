@@ -44,44 +44,119 @@ const Index = () => {
           </Button>
         )}
       </header>
-      {/* Hero Section with Vintage Academic Style */}
+      {/* Hero Section - Clean Academic Style */}
       <Section className="min-h-screen flex flex-col items-center justify-center text-center py-32 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5 pointer-events-none" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
         }}></div>
         
+        {/* Academic Crest */}
         <div className="mb-12 animate-scale-in">
-          <img 
-            src={signovaCurvedLogo} 
-            alt="SIGNOVA" 
-            className="w-56 h-56 md:w-72 md:h-72 mx-auto mb-8 transition-elegant hover-lift vintage-glow"
-          />
+          <div className="relative group">
+            <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary rounded-full blur-xl opacity-20 group-hover:opacity-40 transition-all duration-700"></div>
+            <img 
+              src={signovaCurvedLogo} 
+              alt="Signova Academic Collective Crest" 
+              className="relative w-48 h-48 md:w-64 md:h-64 mx-auto transition-elegant hover-lift vintage-glow"
+            />
+          </div>
         </div>
         
-        <div className="space-y-8 animate-fade-in">
-          <h1 className="font-serif-display text-5xl md:text-7xl lg:text-8xl font-semibold text-foreground mb-6 tracking-wide leading-tight">
-            <span className="inline-block">
-              <span className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                Power in Silence
-              </span>
+        {/* Main Title */}
+        <div className="space-y-6 animate-fade-in">
+          <h1 className="font-serif-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground tracking-wide leading-tight">
+            <span className="text-primary">Signova</span>{' '}
+            <span className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              Collective
             </span>
           </h1>
           
+          <p className="font-serif text-2xl md:text-3xl text-accent italic font-medium">
+            "Power in Silence."
+          </p>
+          
           <div className="w-32 h-0.5 bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-8 animate-fade-in-up"></div>
           
-          <p className="font-serif text-2xl md:text-3xl text-foreground/80 mb-6 max-w-3xl leading-relaxed italic">
-            "We move without sound. We speak without words."
+          <p className="font-sans-body text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl leading-relaxed">
+            An elite academic collective dedicated to mastering American Sign Language through scholarly excellence and silent strength.
           </p>
           
-          <p className="font-sans-body text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl leading-relaxed">
-            An elite Gen Z coordination team mastering the art of non-verbal communication through American Sign Language.
-          </p>
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button 
+              variant="gold" 
+              size="lg"
+              className="px-12 py-4 text-lg font-serif-display hover-glow animate-pulse-academic"
+              onClick={() => window.open('https://wa.me/919718730024?text=I%20am%20interested%20in%20joining%20Signova', '_blank')}
+            >
+              Apply for Membership
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="px-12 py-4 text-lg font-serif-display border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Learn More
+            </Button>
+          </div>
         </div>
         
-        <div className="animate-float">
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 animate-float">
           <div className="w-8 h-8 border-2 border-accent rounded-full flex items-center justify-center animate-pulse-academic">
             <div className="w-2 h-2 bg-accent rounded-full"></div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Excellence in Silent Communication - Feature Cards */}
+      <Section className="py-24 bg-gradient-to-b from-transparent to-secondary/10">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="font-serif-display text-4xl md:text-5xl font-semibold text-foreground mb-16 tracking-wide animate-shimmer">
+            Excellence in Silent Communication
+          </h2>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="group relative overflow-hidden rounded-lg bg-card p-8 academic-shadow hover-lift transition-elegant">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-8 h-8 bg-primary rounded-sm"></div>
+                </div>
+                <h3 className="font-serif-display text-xl font-medium text-foreground mb-4">Academic Excellence</h3>
+                <p className="font-sans-body text-muted-foreground leading-relaxed">
+                  Rigorous curriculum designed for scholarly mastery of ASL fundamentals and advanced techniques.
+                </p>
+              </div>
+            </div>
+            
+            <div className="group relative overflow-hidden rounded-lg bg-card p-8 academic-shadow hover-lift transition-elegant">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-accent/20 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-8 h-8 bg-accent rounded-sm"></div>
+                </div>
+                <h3 className="font-serif-display text-xl font-medium text-foreground mb-4">Elite Community</h3>
+                <p className="font-sans-body text-muted-foreground leading-relaxed">
+                  Selective membership of dedicated scholars committed to advancing ASL proficiency and excellence.
+                </p>
+              </div>
+            </div>
+            
+            <div className="group relative overflow-hidden rounded-lg bg-card p-8 academic-shadow hover-lift transition-elegant">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-8 h-8 bg-primary rounded-sm"></div>
+                </div>
+                <h3 className="font-serif-display text-xl font-medium text-foreground mb-4">Distinguished Ranks</h3>
+                <p className="font-sans-body text-muted-foreground leading-relaxed">
+                  Earn academic badges and recognition through demonstrated competency and leadership excellence.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </Section>
