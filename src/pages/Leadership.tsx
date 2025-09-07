@@ -66,13 +66,13 @@ const Leadership = () => {
       gradient: "from-accent/80 to-primary/80"
     },
     {
-      id: "ayank-creative",
+      id: "ayank-directive",
       name: "Ayank", 
-      role: "creative_director",
-      title: "Creative Director",
-      description: "Shaping the visual identity and creative expression that defines Signova's prestigious academic aesthetic.",
-      specialization: "Visual Design, Brand Identity, Creative Strategy",
-      experience: "Expertise in academic aesthetics",
+      role: "directive_director",
+      title: "Directive Director",
+      description: "Shaping strategic direction and operational excellence that defines Signova's prestigious academic standards.",
+      specialization: "Strategic Direction, Operational Excellence, Academic Standards",
+      experience: "Expertise in directive leadership",
       icon: Settings,
       gradient: "from-primary/80 to-accent/80"
     },
@@ -89,26 +89,26 @@ const Leadership = () => {
     }
   ];
 
-  const advisoryTeam: LeaderProfile[] = [
+  const coreTeam: LeaderProfile[] = [
     {
-      id: "abudaya",
-      name: "Abudaya",
-      role: "senior_advisor",
-      title: "Senior Advisor",
-      description: "Strategic counsel and wisdom provider, offering guidance on critical decisions and long-term vision.",
-      specialization: "Strategic Advisory, Decision Analysis, Long-term Planning",
-      experience: "Senior advisory expertise",
+      id: "abhudaya",
+      name: "Abhudaya",
+      role: "senior_core_member",
+      title: "Senior Core Member",
+      description: "Core leadership and strategic guidance, providing essential support for critical decisions and operational excellence.",
+      specialization: "Strategic Guidance, Core Operations, Leadership Support",
+      experience: "Senior core leadership expertise",
       icon: Eye,
       gradient: "from-muted-foreground/60 to-accent/60"
     },
     {
       id: "dhawal",
       name: "Dhawal",
-      role: "special_ops",
-      title: "Special Operations & Coordination",
-      description: "Tactical coordination specialist ensuring precise execution of critical operations and special initiatives.",
-      specialization: "Tactical Operations, Special Projects, Coordination Excellence",
-      experience: "Special operations expertise",
+      role: "senior_core_member",
+      title: "Senior Core Member",
+      description: "Essential core member providing coordination and operational support for key Signova initiatives.",
+      specialization: "Core Operations, Project Coordination, Team Support",
+      experience: "Senior core member expertise",
       icon: Zap,
       gradient: "from-accent/60 to-primary/60"
     }
@@ -251,21 +251,21 @@ const Leadership = () => {
         </div>
       </Section>
 
-      {/* Advisory Team */}
+      {/* Core Team */}
       <Section className="py-20 bg-gradient-to-b from-accent/5 to-secondary/10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-serif-display text-3xl md:text-4xl font-semibold text-foreground mb-4 tracking-wide">
-              Advisory Council
+              Core Team
             </h2>
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-6"></div>
             <p className="font-sans-body text-muted-foreground max-w-2xl mx-auto">
-              Strategic advisors providing specialized expertise and tactical coordination.
+              Senior core members providing essential leadership and operational excellence.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {advisoryTeam.map((profile, index) => (
+            {coreTeam.map((profile, index) => (
               <ProfileCard key={profile.id} profile={profile} delay={index * 200} />
             ))}
           </div>

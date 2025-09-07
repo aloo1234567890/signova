@@ -86,11 +86,11 @@ const Index = () => {
         </div>
       </Section>
 
-      {/* About the Team - Academic Style */}
+      {/* About Us - Academic Style */}
       <Section id="about" className="text-center py-24 bg-gradient-to-b from-transparent to-secondary/20">
-        <div className="max-w-5xl mx-auto scroll-fade">
-          <h2 className="font-serif-display text-4xl md:text-6xl font-semibold text-foreground mb-8 tracking-wide">
-            The Inner Circle
+        <div className="max-w-6xl mx-auto scroll-fade">
+          <h2 className="font-serif-display text-4xl md:text-6xl font-semibold text-foreground mb-8 tracking-wide animate-shimmer">
+            About Us
           </h2>
           
           <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-16"></div>
@@ -98,39 +98,130 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 text-left animate-slide-in-left">
               <p className="font-serif text-xl md:text-2xl text-foreground leading-relaxed">
-                Signova represents a <em className="text-accent font-medium">quiet revolution</em> in communication—an elite collective of young minds mastering the art of non-verbal discourse.
+                Signova is an <em className="text-accent font-medium">elite, Gen Z-led organization</em> founded by Ayank. It started as a small but bold movement of young learners building skills, discipline, and teamwork through American Sign Language (ASL) and creativity.
               </p>
               
               <p className="font-sans-body text-lg text-muted-foreground leading-relaxed">
-                We believe in the power of focus, the elegance of restraint, and the profound strength found in silence. Our approach transcends traditional learning methodologies.
+                We aren't just a group — we are a tight community of thinkers, builders, and innovators who believe in flowing faster and growing smarter. We are not like everyone else. While others focus only on fun, we focus on knowledge, collaboration, and creating a legacy.
               </p>
               
               <p className="font-sans-body text-lg text-muted-foreground leading-relaxed">
-                Our commitment is not to noise, but to precision. Not to spectacle, but to substance. We cultivate mastery through respect, discipline, and the understanding that true communication transcends words.
+                Our mission is to make Signova a name people remember, standing alongside modern institutions like Harvard, Cambridge, and tech-forward brands like Nothing Phone, Grok, and Lamborghini — but still keeping our own unique identity.
               </p>
             </div>
             
             <div className="animate-fade-in">
               <div className="bg-card p-8 rounded-lg paper-shadow hover-lift transition-elegant">
-                <h3 className="font-serif-display text-2xl font-medium text-primary mb-6">Core Principles</h3>
+                <h3 className="font-serif-display text-2xl font-medium text-primary mb-6">Our Identity</h3>
                 <ul className="space-y-4 text-left">
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="font-sans-body text-foreground">Silent Communication Mastery</span>
+                    <span className="font-sans-body text-foreground">Vintage Harvard-brown branding — strong, trustworthy, formal</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="font-sans-body text-foreground">Academic Excellence</span>
+                    <span className="font-sans-body text-foreground">Premium animations that give life and energy</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="font-sans-body text-foreground">Elite Coordination</span>
+                    <span className="font-sans-body text-foreground">Heritage-style look without being boring</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="font-sans-body text-foreground">Tactical Precision</span>
+                    <span className="font-sans-body text-foreground">Gen Z innovation meets academic excellence</span>
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Our Journey - Timeline Style */}
+      <Section id="journey" className="py-24 bg-gradient-to-b from-secondary/20 to-accent/10">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="font-serif-display text-4xl md:text-6xl font-semibold text-foreground mb-8 tracking-wide animate-shimmer">
+              Our Journey
+            </h2>
+            <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-8"></div>
+            <p className="font-serif text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed italic">
+              "From a small group of close friends to a movement that commands respect — this is the Signova story."
+            </p>
+          </div>
+          
+          <div className="relative">
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-accent via-primary to-accent opacity-30"></div>
+            
+            <div className="space-y-20">
+              {/* Beginning */}
+              <div className="relative flex items-center justify-between scroll-fade">
+                <div className="w-5/12 text-right pr-8">
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-4">The Beginning</h3>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    Signova began when a small group of close friends decided to learn ASL together. What started as curiosity became a dedicated mission.
+                  </p>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-accent rounded-full border-4 border-background flex items-center justify-center vintage-glow">
+                  <div className="w-6 h-6 bg-background rounded-full animate-pulse-academic"></div>
+                </div>
+                <div className="w-5/12"></div>
+              </div>
+              
+              {/* The Movement */}
+              <div className="relative flex items-center justify-between scroll-fade">
+                <div className="w-5/12"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-primary rounded-full border-4 border-background flex items-center justify-center vintage-glow">
+                  <div className="w-6 h-6 bg-background rounded-full animate-pulse-academic"></div>
+                </div>
+                <div className="w-5/12 pl-8">
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-4">Becoming a Movement</h3>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    Over time, this became a movement — a team with its own rules, its own ranks, and its own community identity. We created badges, roles, and logos to represent ourselves.
+                  </p>
+                </div>
+              </div>
+              
+              {/* Rivals Join */}
+              <div className="relative flex items-center justify-between scroll-fade">
+                <div className="w-5/12 text-right pr-8">
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-4">Rivals Become Allies</h3>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    Opponents who once tried to compete with us eventually joined us, realizing we were a force they couldn't beat. Reyansh and Yuvan, once uncertain, are now part of us.
+                  </p>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-accent rounded-full border-4 border-background flex items-center justify-center vintage-glow">
+                  <div className="w-6 h-6 bg-background rounded-full animate-pulse-academic"></div>
+                </div>
+                <div className="w-5/12"></div>
+              </div>
+              
+              {/* Unity */}
+              <div className="relative flex items-center justify-between scroll-fade">
+                <div className="w-5/12"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-primary rounded-full border-4 border-background flex items-center justify-center vintage-glow">
+                  <div className="w-6 h-6 bg-background rounded-full animate-pulse-academic"></div>
+                </div>
+                <div className="w-5/12 pl-8">
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-4">United We Stand</h3>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    Today, Signova stands united — no spies, no rivals, just one powerful team. Our badges aren't just designs, they are symbols of trust and belonging.
+                  </p>
+                </div>
+              </div>
+              
+              {/* Future */}
+              <div className="relative flex items-center justify-between scroll-fade">
+                <div className="w-5/12 text-right pr-8">
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-4">Expanding Horizons</h3>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    We are continuously expanding, forming new sub-organizations like Lunova and AINova Labs, but Signova is the heart of it all.
+                  </p>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-accent rounded-full border-4 border-background flex items-center justify-center vintage-glow">
+                  <div className="w-6 h-6 bg-background rounded-full animate-glow"></div>
+                </div>
+                <div className="w-5/12"></div>
               </div>
             </div>
           </div>
@@ -411,6 +502,70 @@ const Index = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Contact Section */}
+      <Section id="contact" className="py-24 bg-gradient-to-b from-primary/5 to-accent/10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="font-serif-display text-4xl md:text-5xl font-semibold text-foreground mb-8 tracking-wide animate-shimmer">
+            Contact Us
+          </h2>
+          <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-16"></div>
+          
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Join Signova */}
+            <div className="scroll-fade">
+              <Card className="bg-card/90 backdrop-blur-sm border border-accent/20 p-8 academic-shadow hover-lift transition-elegant h-full">
+                <div className="space-y-6">
+                  <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6 hover:scale-110 transition-transform duration-300">
+                    <div className="w-8 h-8 bg-accent rounded-full animate-pulse-academic"></div>
+                  </div>
+                  
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-4">Join Signova</h3>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed mb-8">
+                    Ready to become part of something extraordinary? Send us your inquiry and demonstrate your commitment to excellence.
+                  </p>
+                  
+                  <Button 
+                    variant="gold" 
+                    size="lg"
+                    className="px-12 py-3 text-lg font-serif-display hover-glow animate-pulse-academic"
+                    onClick={() => window.open('https://wa.me/919718730024?text=I%20am%20interested%20in%20joining%20Signova', '_blank')}
+                  >
+                    WhatsApp Inquiry
+                  </Button>
+                </div>
+              </Card>
+            </div>
+            
+            {/* General Contact */}
+            <div className="scroll-fade">
+              <Card className="bg-card/90 backdrop-blur-sm border border-primary/20 p-8 academic-shadow hover-lift transition-elegant h-full">
+                <div className="space-y-6">
+                  <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 hover:scale-110 transition-transform duration-300">
+                    <div className="w-8 h-8 bg-primary rounded-full animate-pulse-academic"></div>
+                  </div>
+                  
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-4">General Inquiries</h3>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed mb-8">
+                    For general questions, partnerships, or academic inquiries, connect with our team through WhatsApp for fastest response.
+                  </p>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-center justify-center space-x-3 text-muted-foreground">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <span className="font-sans-body text-sm">WhatsApp: +91 97187 30024</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-3 text-muted-foreground">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <span className="font-sans-body text-sm">Response Time: Within 24 hours</span>
+                    </div>
+                  </div>
+                </div>
+              </Card>
             </div>
           </div>
         </div>
