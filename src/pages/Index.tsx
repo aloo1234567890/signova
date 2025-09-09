@@ -302,6 +302,147 @@ const Index = () => {
         </div>
       </Section>
 
+      {/* Signova Timeline */}
+      <Section className="py-24 bg-gradient-to-b from-accent/5 to-primary/5">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="font-serif-display text-4xl md:text-6xl font-semibold text-foreground mb-8 tracking-wide">
+              Signova Timeline
+            </h2>
+            <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-8"></div>
+            <p className="font-serif text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed italic">
+              "The chronicles of our rise — from inception to digital awakening."
+            </p>
+          </div>
+          
+          <div className="relative max-w-4xl mx-auto">
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-accent to-primary opacity-40"></div>
+            
+            <div className="space-y-12">
+              {/* January 2025 */}
+              <div className="relative flex items-start scroll-fade">
+                <div className="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-background vintage-glow"></div>
+                <div className="ml-20 bg-card p-6 rounded-lg paper-shadow hover-lift transition-elegant">
+                  <div className="flex items-center mb-3">
+                    <span className="font-serif-display text-lg font-semibold text-primary">January 2025</span>
+                    <span className="ml-4 text-accent font-medium">The Origin</span>
+                  </div>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    Signova was founded by Ayank Mishra with a vision to build a Gen Z-powered ASL squad driven by stealth, discipline, and unity.
+                  </p>
+                </div>
+              </div>
+
+              {/* February 2025 */}
+              <div className="relative flex items-start scroll-fade">
+                <div className="absolute left-6 w-4 h-4 bg-accent rounded-full border-4 border-background vintage-glow"></div>
+                <div className="ml-20 bg-card p-6 rounded-lg paper-shadow hover-lift transition-elegant">
+                  <div className="flex items-center mb-3">
+                    <span className="font-serif-display text-lg font-semibold text-primary">February 2025</span>
+                    <span className="ml-4 text-accent font-medium">The Core Four</span>
+                  </div>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    The first members joined: Ayank, Bhavyansh, Dhaval, and Abhyudaya. They became the foundation of the group.
+                  </p>
+                </div>
+              </div>
+
+              {/* March 2025 */}
+              <div className="relative flex items-start scroll-fade">
+                <div className="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-background vintage-glow"></div>
+                <div className="ml-20 bg-card p-6 rounded-lg paper-shadow hover-lift transition-elegant">
+                  <div className="flex items-center mb-3">
+                    <span className="font-serif-display text-lg font-semibold text-primary">March 2025</span>
+                    <span className="ml-4 text-accent font-medium">The Expansion</span>
+                  </div>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    New faces strengthened the team: Reyansh (sharp scorer) and Akshash (junior with promise).
+                  </p>
+                </div>
+              </div>
+
+              {/* April 2025 */}
+              <div className="relative flex items-start scroll-fade">
+                <div className="absolute left-6 w-4 h-4 bg-accent rounded-full border-4 border-background vintage-glow"></div>
+                <div className="ml-20 bg-card p-6 rounded-lg paper-shadow hover-lift transition-elegant">
+                  <div className="flex items-center mb-3">
+                    <span className="font-serif-display text-lg font-semibold text-primary">April 2025</span>
+                    <span className="ml-4 text-accent font-medium">Rivalry Begins</span>
+                  </div>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    A rivalry sparked with Achyantya's group. Yuwan infiltrated as a covert agent, giving Signova a tactical edge.
+                  </p>
+                </div>
+              </div>
+
+              {/* May 2025 */}
+              <div className="relative flex items-start scroll-fade">
+                <div className="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-background vintage-glow"></div>
+                <div className="ml-20 bg-card p-6 rounded-lg paper-shadow hover-lift transition-elegant">
+                  <div className="flex items-center mb-3">
+                    <span className="font-serif-display text-lg font-semibold text-primary">May 2025</span>
+                    <span className="ml-4 text-accent font-medium">Lunova Branch</span>
+                  </div>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    The girls' wing, Lunova, launched with Triana (Leader) and Ravya, expanding Signova's reach and creativity.
+                  </p>
+                </div>
+              </div>
+
+              {/* Mid 2025 */}
+              <div className="relative flex items-start scroll-fade">
+                <div className="absolute left-6 w-4 h-4 bg-accent rounded-full border-4 border-background vintage-glow"></div>
+                <div className="ml-20 bg-card p-6 rounded-lg paper-shadow hover-lift transition-elegant">
+                  <div className="flex items-center mb-3">
+                    <span className="font-serif-display text-lg font-semibold text-primary">Mid 2025</span>
+                    <span className="ml-4 text-accent font-medium">Guidance & Growth</span>
+                  </div>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    Kushal (senior and co-creator of Nuroblade) stepped in as mentor, helping the squad grow stronger.
+                  </p>
+                </div>
+              </div>
+
+              {/* August 2025 */}
+              <div className="relative flex items-start scroll-fade">
+                <div className="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-background vintage-glow"></div>
+                <div className="ml-20 bg-card p-6 rounded-lg paper-shadow hover-lift transition-elegant">
+                  <div className="flex items-center mb-3">
+                    <span className="font-serif-display text-lg font-semibold text-primary">August 2025</span>
+                    <span className="ml-4 text-accent font-medium">The Digital Era</span>
+                  </div>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    The official Signova website went live on Lovable.dev, styled with a Harvard-inspired design. It became the group's digital home for timelines, badges, and enquiries.
+                  </p>
+                </div>
+              </div>
+
+              {/* September 2025 */}
+              <div className="relative flex items-start scroll-fade">
+                <div className="absolute left-6 w-4 h-4 bg-accent rounded-full border-4 border-background vintage-glow animate-glow"></div>
+                <div className="ml-20 bg-card p-6 rounded-lg paper-shadow hover-lift transition-elegant border-l-4 border-primary">
+                  <div className="flex items-center mb-3">
+                    <span className="font-serif-display text-lg font-semibold text-primary">September 2025</span>
+                    <span className="ml-4 text-accent font-medium">The Awakening</span>
+                  </div>
+                  <div className="space-y-3">
+                    <p className="font-sans-body text-muted-foreground leading-relaxed">
+                      <strong className="text-foreground">8–19 September:</strong> Exams ran from 8th to 19th September, slowing activities.
+                    </p>
+                    <p className="font-sans-body text-muted-foreground leading-relaxed">
+                      <strong className="text-foreground">20 September:</strong> The first official meetup was held at Ayank's house, marking the turning point for the squad.
+                    </p>
+                    <p className="font-sans-body text-muted-foreground leading-relaxed">
+                      <strong className="text-foreground">After 20 September:</strong> With exams behind them, Signova entered a new phase of unity and rise, becoming more active and ambitious than ever.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* Enquire Section - Academic Style */}
       <Section id="enquire" className="text-center py-24 bg-gradient-to-r from-secondary/10 to-accent/10">
         <div className="max-w-4xl mx-auto scroll-fade">
