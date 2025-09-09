@@ -68,7 +68,6 @@ const Index = () => {
           <h1 className="font-serif-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground tracking-wide leading-tight">
             <span className="text-primary">Signova</span>{' '}
             <span className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              Collective
             </span>
           </h1>
           
@@ -590,57 +589,62 @@ const Index = () => {
           </h2>
           <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-16"></div>
           
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Join Signova */}
-            <div className="scroll-fade">
-              <Card className="bg-card/90 backdrop-blur-sm border border-accent/20 p-8 academic-shadow hover-lift transition-elegant h-full">
-                <div className="space-y-6">
-                  <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6 hover:scale-110 transition-transform duration-300">
-                    <div className="w-8 h-8 bg-accent rounded-full animate-pulse-academic"></div>
-                  </div>
-                  
-                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-4">Join Signova</h3>
-                  <p className="font-sans-body text-muted-foreground leading-relaxed mb-8">
-                    Ready to become part of something extraordinary? Send us your inquiry and demonstrate your commitment to excellence.
-                  </p>
-                  
-                  <Button 
-                    variant="gold" 
-                    size="lg"
-                    className="px-12 py-3 text-lg font-serif-display hover-glow animate-pulse-academic"
-                    onClick={() => window.open('https://wa.me/919718730024?text=I%20am%20interested%20in%20joining%20Signova', '_blank')}
-                  >
-                    WhatsApp Inquiry
-                  </Button>
+          <div className="max-w-3xl mx-auto text-left">
+            <p className="font-sans-body text-lg text-muted-foreground leading-relaxed mb-8 text-center">
+              For enquiries, collaborations, or learning opportunities with Signova, please reach out through our enquiry form or email.
+            </p>
+            
+            <div className="bg-card/90 backdrop-blur-sm border border-primary/20 p-8 rounded-lg academic-shadow hover-lift transition-elegant space-y-6">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-6 h-6 bg-primary rounded-sm"></div>
                 </div>
-              </Card>
+                <div>
+                  <h3 className="font-serif-display text-lg font-medium text-foreground">Location</h3>
+                  <p className="font-sans-body text-muted-foreground">Mount Carmel School, Gurugram (Sector 115, Bajghera)</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-6 h-6 bg-accent rounded-sm"></div>
+                </div>
+                <div>
+                  <h3 className="font-serif-display text-lg font-medium text-foreground">Email</h3>
+                  <a href="mailto:signova.group@gmail.com" className="font-sans-body text-primary hover:text-accent transition-colors">
+                    signova.group@gmail.com
+                  </a>
+                </div>
+              </div>
+              
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-6 h-6 bg-primary rounded-sm"></div>
+                </div>
+                <div>
+                  <h3 className="font-serif-display text-lg font-medium text-foreground">WhatsApp Inquiries</h3>
+                  <a href="https://wa.me/919718730024" className="font-sans-body text-primary hover:text-accent transition-colors">
+                    +91 97187 30024
+                  </a>
+                </div>
+              </div>
+              
+              <div className="pt-6 border-t border-accent/20">
+                <p className="font-sans-body text-sm text-muted-foreground italic text-center">
+                  Note: Signova is a student initiative. Membership is selective and responses may take time.
+                </p>
+              </div>
             </div>
             
-            {/* General Contact */}
-            <div className="scroll-fade">
-              <Card className="bg-card/90 backdrop-blur-sm border border-primary/20 p-8 academic-shadow hover-lift transition-elegant h-full">
-                <div className="space-y-6">
-                  <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 hover:scale-110 transition-transform duration-300">
-                    <div className="w-8 h-8 bg-primary rounded-full animate-pulse-academic"></div>
-                  </div>
-                  
-                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-4">General Inquiries</h3>
-                  <p className="font-sans-body text-muted-foreground leading-relaxed mb-8">
-                    For general questions, partnerships, or academic inquiries, connect with our team through WhatsApp for fastest response.
-                  </p>
-                  
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-center space-x-3 text-muted-foreground">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="font-sans-body text-sm">WhatsApp: +91 97187 30024</span>
-                    </div>
-                    <div className="flex items-center justify-center space-x-3 text-muted-foreground">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="font-sans-body text-sm">Response Time: Within 24 hours</span>
-                    </div>
-                  </div>
-                </div>
-              </Card>
+            <div className="text-center mt-12">
+              <Button 
+                variant="gold" 
+                size="lg"
+                className="px-12 py-3 text-lg font-serif-display hover-glow animate-pulse-academic"
+                onClick={() => window.open('https://wa.me/919718730024?text=I%20am%20interested%20in%20joining%20Signova', '_blank')}
+              >
+                Join Signova
+              </Button>
             </div>
           </div>
         </div>
