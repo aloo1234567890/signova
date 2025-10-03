@@ -228,12 +228,12 @@ const Index = () => {
             <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-accent via-primary to-accent opacity-30"></div>
             
             <div className="space-y-2">
-              {/* Beginning */}
+              {/* January 2025 – The Origin */}
               <div className="relative flex items-center justify-between scroll-fade">
                 <div className="w-5/12 text-right pr-2">
-                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-1">The Beginning</h3>
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-1">January 2025 – The Origin</h3>
                   <p className="font-sans-body text-muted-foreground leading-relaxed">
-                    Signova began when a small group of close friends decided to learn ASL together. What started as curiosity became a dedicated mission.
+                    Signova was founded by Ayank Mishra with a vision to build a Gen Z-powered ASL squad driven by stealth, discipline, and unity.
                   </p>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-accent rounded-full border-4 border-background flex items-center justify-center vintage-glow">
@@ -242,26 +242,26 @@ const Index = () => {
                 <div className="w-5/12"></div>
               </div>
               
-              {/* The Movement */}
+              {/* February 2025 – The Core Four */}
               <div className="relative flex items-center justify-between scroll-fade">
                 <div className="w-5/12"></div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-primary rounded-full border-4 border-background flex items-center justify-center vintage-glow">
                   <div className="w-6 h-6 bg-background rounded-full animate-pulse-academic"></div>
                 </div>
                 <div className="w-5/12 pl-2">
-                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-1">Becoming a Movement</h3>
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-1">February 2025 – The Core Four</h3>
                   <p className="font-sans-body text-muted-foreground leading-relaxed">
-                    Over time, this became a movement — a team with its own rules, its own ranks, and its own community identity. We created badges, roles, and logos to represent ourselves.
+                    The first members joined: Ayank, Bhavyansh, Dhaval, and Abhyudaya. They became the foundation of the group.
                   </p>
                 </div>
               </div>
               
-              {/* Rivals Join */}
+              {/* March 2025 – The Expansion */}
               <div className="relative flex items-center justify-between scroll-fade">
                 <div className="w-5/12 text-right pr-2">
-                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-1">Rivals Become Allies</h3>
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-1">March 2025 – The Expansion</h3>
                   <p className="font-sans-body text-muted-foreground leading-relaxed">
-                    Opponents who once tried to compete with us eventually joined us, realizing we were a force they couldn't beat. Reyansh and Yuvan, once uncertain, are now part of us.
+                    New faces strengthened the team: Reyansh (sharp scorer) and Akshash (junior with promise).
                   </p>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-accent rounded-full border-4 border-background flex items-center justify-center vintage-glow">
@@ -270,32 +270,76 @@ const Index = () => {
                 <div className="w-5/12"></div>
               </div>
               
-              {/* Unity */}
+              {/* April 2025 – Rivalry Begins */}
               <div className="relative flex items-center justify-between scroll-fade">
                 <div className="w-5/12"></div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-primary rounded-full border-4 border-background flex items-center justify-center vintage-glow">
                   <div className="w-6 h-6 bg-background rounded-full animate-pulse-academic"></div>
                 </div>
                 <div className="w-5/12 pl-2">
-                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-1">United We Stand</h3>
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-1">April 2025 – Rivalry Begins</h3>
                   <p className="font-sans-body text-muted-foreground leading-relaxed">
-                    Today, Signova stands united — no spies, no rivals, just one powerful team. Our badges aren't just designs, they are symbols of trust and belonging.
+                    A rivalry sparked with Achyantya&apos;s group. Yuwan infiltrated as a covert agent, giving Signova a tactical edge.
                   </p>
                 </div>
               </div>
               
-              {/* Future */}
+              {/* May 2025 – Lunova Branch */}
               <div className="relative flex items-center justify-between scroll-fade">
                 <div className="w-5/12 text-right pr-2">
-                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-1">Expanding Horizons</h3>
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-1">May 2025 – Lunova Branch</h3>
                   <p className="font-sans-body text-muted-foreground leading-relaxed">
-                    We are continuously expanding, forming new sub-organizations like Lunova and AINova Labs, but Signova is the heart of it all.
+                    The girls&apos; wing, Lunova, launched with Triana (Leader) and Ravya, expanding Signova&apos;s reach and creativity.
                   </p>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-accent rounded-full border-4 border-background flex items-center justify-center vintage-glow">
+                  <div className="w-6 h-6 bg-background rounded-full animate-pulse-academic"></div>
+                </div>
+                <div className="w-5/12"></div>
+              </div>
+              
+              {/* Mid 2025 – Guidance & Growth */}
+              <div className="relative flex items-center justify-between scroll-fade">
+                <div className="w-5/12"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-primary rounded-full border-4 border-background flex items-center justify-center vintage-glow">
+                  <div className="w-6 h-6 bg-background rounded-full animate-pulse-academic"></div>
+                </div>
+                <div className="w-5/12 pl-2">
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-1">Mid 2025 – Guidance & Growth</h3>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    Kushal (senior and co-creator of Nuroblade) stepped in as mentor, helping the squad grow stronger.
+                  </p>
+                </div>
+              </div>
+              
+              {/* August 2025 – The Digital Era */}
+              <div className="relative flex items-center justify-between scroll-fade">
+                <div className="w-5/12 text-right pr-2">
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-1">August 2025 – The Digital Era</h3>
+                  <p className="font-sans-body text-muted-foreground leading-relaxed">
+                    The official Signova website went live on Lovable.dev, styled with a Harvard-inspired design. It became the group&apos;s digital home for timelines, badges, and enquiries.
+                  </p>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-accent rounded-full border-4 border-background flex items-center justify-center vintage-glow">
+                  <div className="w-6 h-6 bg-background rounded-full animate-pulse-academic"></div>
+                </div>
+                <div className="w-5/12"></div>
+              </div>
+              
+              {/* September 2025 – The Awakening */}
+              <div className="relative flex items-center justify-between scroll-fade">
+                <div className="w-5/12"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-primary rounded-full border-4 border-background flex items-center justify-center vintage-glow">
                   <div className="w-6 h-6 bg-background rounded-full animate-glow"></div>
                 </div>
-                <div className="w-5/12"></div>
+                <div className="w-5/12 pl-2">
+                  <h3 className="font-serif-display text-2xl font-medium text-foreground mb-1">September 2025 – The Awakening</h3>
+                  <div className="font-sans-body text-muted-foreground leading-relaxed space-y-1">
+                    <p><strong>8–19 September:</strong> Exams ran from 8th to 19th September, slowing activities.</p>
+                    <p><strong>20 September:</strong> The first official meetup was held at Ayank&apos;s house, marking the turning point for the squad.</p>
+                    <p><strong>After 20 September:</strong> With exams behind them, Signova entered a new phase of unity and rise, becoming more active and ambitious than ever.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
